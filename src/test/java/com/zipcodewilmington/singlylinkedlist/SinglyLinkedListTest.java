@@ -95,4 +95,63 @@ class SinglyLinkedListTest {
 //        Assert.assertEquals(expected,actual);
 //
 //    }
+
+    @Test
+public void TheLinkedListSize1Test(){
+    SinglyLinkedList  singlyLinkedList = new SinglyLinkedList();
+    String bill = "Bill";
+    singlyLinkedList.add(bill);
+    String jill = "Jill";
+    singlyLinkedList.add(jill);
+    String dill = "Dill";
+    singlyLinkedList.add(dill);
+    String will = "Will";
+    singlyLinkedList.add(will);
+
+    Integer expected = 4;
+   Integer actual= singlyLinkedList.size();
+    Assert.assertEquals(expected,actual);
+}
+    @Test
+    public void TheLinkedListSize2Test(){
+        SinglyLinkedList  singlyLinkedList = new SinglyLinkedList();
+        String bill = "Bill";
+        singlyLinkedList.add(bill);
+        String jill = "Jill";
+        singlyLinkedList.add(jill);
+        String dill = "Dill";
+        singlyLinkedList.add(dill);
+
+
+        Integer expected = 3;
+        Integer actual= singlyLinkedList.size();
+        Assert.assertEquals(expected,actual);
+    }
+    @Test
+    public void TheLinkedListSize3Test(){
+        SinglyLinkedList  singlyLinkedList = new SinglyLinkedList();
+
+
+        Integer expected = 0;
+        Integer actual= singlyLinkedList.size();
+        Assert.assertEquals(expected,actual);
+    }
+    @Test
+    public void TheLinkedListGetTest(){
+        SinglyLinkedList  singlyLinkedList = new SinglyLinkedList();
+        String bill = "Bill";
+        singlyLinkedList.add(bill);
+        String jill = "Jill";
+        singlyLinkedList.add(jill);
+        String dill = "Dill";
+        singlyLinkedList.add(dill);
+        String will = "Will";
+        singlyLinkedList.add(will);
+
+        String expected = dill;
+       String actual= singlyLinkedList.get(2).toString();
+        Assert.assertEquals(expected,actual);
+    }
+
+
 }
